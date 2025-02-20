@@ -9,6 +9,13 @@
 </head>
 <body>
     {% block content %}{% endblock %}
+    <div id="app"></div>
+    {% if debug %}
+    <script type="module" src="http://localhost:3000/@vite/client"></script>
+    <script type="module" src="http://localhost:3000/src/main.js"></script>    
+    {% else %}
     <script src="{% static 'backoffice/js/main.js' %}"></script>
+    {% endif %}    
+    
 </body>
 </html>
