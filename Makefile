@@ -13,3 +13,6 @@ setup: ## setup
 run: ## run the application
 	@echo "Run the application"
 	@uv run python manage.py runserver ${PORT}
+collectstatic: ## collect static files
+	@echo "Collect static files"
+	@python manage.py collectstatic

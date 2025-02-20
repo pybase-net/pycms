@@ -12,3 +12,6 @@ wheels/
 
 # test db
 db.sqlite3
+
+# Ignore public files
+public

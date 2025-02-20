@@ -132,6 +132,9 @@ STATIC_URL = 'static/'
 #     BASE_DIR / "static",
 # ]
 
+# Static assets for production
+STATIC_ROOT = BASE_DIR / 'public'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
