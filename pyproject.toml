@@ -5,4 +5,6 @@ description = "A stunning headless CMS for Python"
 authors = ["misostack", "pybase.net"]
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "django>=5.1.6",
+]
