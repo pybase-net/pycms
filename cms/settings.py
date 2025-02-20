@@ -43,7 +43,11 @@ CMS_MODULES = [
     'modules.user',
 ]
 
-INSTALLED_APPS = DJANGO_CORE_MODULES + CMS_MODULES
+CMS_APPS = [
+    'apps.backoffice',
+]
+
+INSTALLED_APPS = DJANGO_CORE_MODULES + CMS_MODULES + CMS_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -122,6 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Global static assets
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+# ]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

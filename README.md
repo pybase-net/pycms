@@ -6,6 +6,20 @@
 2. Description: A headless CMS built by Django and VueJS
 3. Main features: manage pages, manage posts and categories
 
+Development concepts, we'll implement layer architecture:
+
+1. Presentation Layer
+
+- Views: response can be json/html
+
+2. Business Layer
+
+- Services
+
+3. Persistence Layer
+
+- Models
+
 ## Prerequisites
 
 ## Quick start
@@ -30,17 +44,24 @@ django-admin startproject cms .
 
 ### High level design
 
-Modules
+**Modules**
 
 - user
 - pages
 - posts
+
+**apps**
+
+- backoffice : we'll create a SPA inside django
 
 ### Creating app(modules) in django
 
 ```sh
 mkdir -p modules/user
 django-admin startapp user modules/user
+
+mkdir -p apps/backoffice
+django-admin startapp backoffice apps/backoffice
 ```
 
 ### Using uv
