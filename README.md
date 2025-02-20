@@ -28,6 +28,21 @@ django-admin help
 django-admin startproject cms .
 ```
 
+### High level design
+
+Modules
+
+- user
+- pages
+- posts
+
+### Creating app(modules) in django
+
+```sh
+mkdir -p modules/user
+django-admin startapp user modules/user
+```
+
 ### Using uv
 
 ```sh
