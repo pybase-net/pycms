@@ -39,6 +39,10 @@ DJANGO_CORE_MODULES = [
     'django.contrib.staticfiles',
 ]
 
+DJANGO_EXTENSIONS = [
+    'rest_framework',
+]
+
 CMS_MODULES = [
     'modules.user',
 ]
@@ -47,7 +51,7 @@ CMS_APPS = [
     'apps.backoffice',
 ]
 
-INSTALLED_APPS = DJANGO_CORE_MODULES + CMS_MODULES + CMS_APPS
+INSTALLED_APPS = DJANGO_CORE_MODULES + DJANGO_EXTENSIONS + CMS_MODULES + CMS_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -139,3 +143,13 @@ STATIC_ROOT = BASE_DIR / 'public'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# REST Framework
+
+REST_FRAMEWORK = {
+    # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}

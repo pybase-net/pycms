@@ -20,6 +20,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
+    # django admin
     path('dj-admin/', admin.site.urls),
+    # api
+    path('api/v1/', include('modules.user.urls')),
+    # backoffice
     re_path(r'.*$', include('apps.backoffice.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
