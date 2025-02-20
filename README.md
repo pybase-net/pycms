@@ -17,6 +17,19 @@ django-admin help
 django-admin startproject cms .
 ```
 
+### Using uv
+
+```sh
+# add new package
+uv add package-name
+# lock package
+uv lock
+# exporting lockfile
+uv export --format requirements-txt > requirements.txt
+# sync
+uv sync
+```
+
 ## Reference
 
 - [uv package management](https://docs.astral.sh/uv/getting-started/installation/)
