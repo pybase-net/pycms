@@ -47,8 +47,8 @@ django-admin startproject cms .
 **Modules**
 
 - user
-- pages
-- posts
+- page
+- post
 
 **apps**
 

@@ -45,6 +45,7 @@ DJANGO_EXTENSIONS = [
 
 CMS_MODULES = [
     'modules.user',
+    'modules.page',
 ]
 
 CMS_APPS = [

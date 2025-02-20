@@ -24,6 +24,7 @@ urlpatterns = [
     path('dj-admin/', admin.site.urls),
     # api
     path('api/v1/', include('modules.user.urls')),
+    path('api/v1/', include('modules.page.urls')),
     # backoffice
     re_path(r'.*$', include('apps.backoffice.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
