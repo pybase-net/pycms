@@ -1,0 +1,8 @@
+[project]
+name = "pycms"
+version = "0.1.0"
+description = "A stunning headless CMS for Python"
+authors = ["misostack", "pybase.net"]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
